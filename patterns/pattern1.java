@@ -70,6 +70,8 @@ public class pattern1 {
         
     }
     public static void pattern8(int n){
+        
+        
         //outer loops
         for(int i=0;i<n;i++){
             //prit the space
@@ -88,7 +90,39 @@ public class pattern1 {
         
     }
 
+public static void pattern9(int n){
+    for(int i=0;i<n;i++){
+        //prit the space
+        for(int j=0;j<n-i-1;j++){
+            System.out.print(" ");
+        }
+        //print the stars
+        for(int j=0;j<2*i+1;j++){
+            System.out.print("*");
+        }
+        for(int j=0;j<n-i-1;j++){
+            System.out.print(" ");
+        }
+        System.out.println();
+    }
 
+
+    for(int i=0;i<n;i++){
+        //prit the space
+        for(int j=0;j<i;j++){
+            System.out.print(" ");
+        }
+        //print the stars
+        for(int j=0;j<(2*n-(2*i +1));j++){
+            System.out.print("*");
+        }
+        for(int j=0;j<i;j++){
+            System.out.print(" ");
+        }
+        System.out.println();
+    }
+
+}
 
 
 
@@ -103,7 +137,7 @@ public class pattern1 {
         pattern1 obj = new pattern1();
         obj.pattern(n);
         obj.pattern2(n);
-        obj.pattern8(n);
+        obj.pattern9(n);
     }
 }
    
