@@ -268,14 +268,31 @@ public class pattern1 {
         }
     }
 
+    public static void pattern20(int n){
+       
+        for(int i=0;i<n;i++){
+          
+            for(int j=0;j<n-i;j++){
+                System.out.println("* ");
+            }
+            for ( int j=0;j<2*i;i++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<n-i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
 
     public static void main(String[] args) {
-        int N = 5;
-
-        // Create an instance of Pattern1 and call the pattern method
-        pattern1 obj = new pattern1();
-        
-        obj.pattern19(N);
+            int n = 5;
+    
+            // Create an instance of Pattern1 and call the pattern method
+            pattern1 obj = new pattern1();
+            
+            obj.pattern20(n);
     }
 }
    
