@@ -24,6 +24,7 @@ class problems {
       int result = countdigits(3455667);
       int result1 = reversenum(1234);
       System.out.println("the result is "+result1);
+      System.out.println("the result is "+result);
      
     }
     
