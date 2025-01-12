@@ -20,6 +20,23 @@ class problems {
     }
     return rev;
    }
+   public static void palindrome(int n) {
+    int revnum = 0;
+    int dup = n;
+
+    while (n > 0) {
+        int id = n % 10;
+        revnum = (revnum * 10) + id; // Correct multiplication
+        n = n / 10;
+    }
+
+    if (dup == revnum) {
+        System.out.println("true");
+    } else {
+        System.out.println("false");
+    }
+}
+   
     public static void main(String[] args) {
       int result = countdigits(3455667);
       int result1 = reversenum(1234);
