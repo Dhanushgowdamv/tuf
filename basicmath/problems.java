@@ -1,6 +1,8 @@
  package basicmath;
 
 class problems {
+
+  //count teh number of digits
    public static int countdigits(int n){
     int cn=0;
     while(n>0){
@@ -11,6 +13,7 @@ class problems {
     return cn;
     
    }
+   //reverse the number
    public static int reversenum(int n){
     int rev=0;
     while(n>0){
@@ -20,6 +23,7 @@ class problems {
     }
     return rev;
    }
+   //palindrome
    public static void palindrome(int n) {
     int revnum = 0;
     int dup = n;
@@ -36,10 +40,25 @@ class problems {
         System.out.println("false");
     }
 }
-   
+//amstrong number
+   public static void amstrong(int n){
+    int sum = 0;
+    int dup = n;
+    while(n>0){
+      int lst = n%10;
+      sum = sum + (lst*lst*lst);
+      n= n/10;
+    }
+    if(sum == dup){
+      System.out.println(" yes");
+    }else{
+      System.out.println("no");
+    }
+   }
     public static void main(String[] args) {
       int result = countdigits(3455667);
       int result1 = reversenum(1234);
+      amstrong(123);
       System.out.println("the result is "+result1);
       System.out.println("the result is "+result);
      
