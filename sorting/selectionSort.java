@@ -1,7 +1,7 @@
-public class SelectionSort {
+public class selectionSort {
 
     // Method to perform Selection Sort
-    public static void selectionSort(int[] arr) {
+    public static void SelectionSort(int[] arr) {
         int n = arr.length;
 
         // Iterate over the array
@@ -34,7 +34,7 @@ public class SelectionSort {
         System.out.println("Original array:");
         printArray(arr);
 
-        selectionSort(arr); // Sort the array
+        SelectionSort(arr); // Sort the array
 
         System.out.println("Sorted array:");
         printArray(arr);
