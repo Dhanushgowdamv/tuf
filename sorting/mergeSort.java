@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class MergeSort {
+public class mergeSort {
     // Main method to call mergeSort
     public static void main(String[] args) {
         int[] arr = {38, 27, 43, 3, 9, 82, 10};
