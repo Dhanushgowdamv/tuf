@@ -39,8 +39,8 @@ public class ArrayOperations {
         findUnion(array1, array2);
 
         // Finding the missing number
-        int[] array = {1, 2, 4, 5, 6}; // Missing number is 3
-        int n = 6; // The last number in the sequence
+        int[] array = {1, 2, 4, 5, 6}; 
+        int n = 6; 
         System.out.println("Missing number: " + findMissingNumber(array, n));
     }
 }
