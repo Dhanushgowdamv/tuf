@@ -33,12 +33,11 @@ public class ArrayOperations {
     }
 
     public static void main(String[] args) {
-        // Union of two arrays
         int[] array1 = {1, 2, 3, 4, 5};
         int[] array2 = {3, 4, 5, 6, 7};
         findUnion(array1, array2);
 
-        // Finding the missing number
+       
         int[] array = {1, 2, 4, 5, 6}; 
         int n = 6; 
         System.out.println("Missing number: " + findMissingNumber(array, n));
