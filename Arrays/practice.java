@@ -42,6 +42,21 @@ public class practice {
           }
           return ssmallest;
     }
+
+    //check if the array is sorted or not
+public static boolean isSorted(int n , int[] a){
+    for(int i=0;i<n;i++){
+    if(a[i] >= a[i-1]){
+
+    }
+    else {
+        return false;
+    }
+    
+}
+return true;
+}
+
     public static void main(String[] args) {
         int[] numbers = {10, 25, 35, 42, 5, 19};  // Sample array
         int largestNumber = large(numbers.length, numbers);  // Calling the method
@@ -50,6 +65,7 @@ public class practice {
         int n = a.length;
         int slargest = secondlargest(a,n);
         int ssmallest= secondsmallest(a,n);
+        int isSort = isSorted(a,n);
        System.out.println("second Largest "+slargest);
         System.out.println("second smallest"+ssmallest);
     }
