@@ -1,3 +1,4 @@
+import java.util.*;
 public class practice {
 
     public static int large(int n, int[] arr) {
@@ -57,12 +58,25 @@ public static boolean isSorted(int n , int[] a){
 return true;
 }
 
+//remove the duplicates in the sorted array
+
+public static List<Integer> removedup(int[] arr){
+    Set<Integer> set = new LinkedHashSet<>();
+    for(int num : arr){
+        set.add(num);
+    }
+    return new ArrayList<>(set);
+
+}
+
+
 
     public static void main(String[] args) {
         int[] numbers = {10, 25, 35, 42, 5, 19};  // Sample array
         int largestNumber = large(numbers.length, numbers);  // Calling the method
         System.out.println("Largest number is: " + largestNumber);  // Output the result
         int[] a= {1,2,4,7,2,9,3};
+        int[] arr = {1,1,2,2,2,3,4,4,5};
         int n = a.length;
         int slargest = secondlargest(a,n);
         int ssmallest= secondsmallest(a,n);
@@ -70,6 +84,7 @@ return true;
        System.out.println("second Largest "+slargest);
         System.out.println("second smallest"+ssmallest);
       System.out.println("is array sorted"+isSort);
+      System.out.println("remove the duplicate number"+removedup(arr));
     }
 
 }
