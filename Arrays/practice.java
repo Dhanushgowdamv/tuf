@@ -69,7 +69,7 @@ public static List<Integer> removedup(int[] arr){
 
 }
 
-//left rotate the array by one place
+//left rotate the array by one 
 static void solve(int[] arr, int n){
     int temp[] = new int[n];
     for(int i=0;i<n;i++){
