@@ -82,6 +82,8 @@ static void solve(int[] arr, int n){
 }
 
 
+
+
     public static void main(String[] args) {
         int[] numbers = {10, 25, 35, 42, 5, 19};  // Sample array
         int largestNumber = large(numbers.length, numbers);  // Calling the method
