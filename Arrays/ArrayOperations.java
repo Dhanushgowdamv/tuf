@@ -31,6 +31,14 @@ public class ArrayOperations {
 
         return expectedSum - actualSum;
     }
+    public static int linearSearch(int[] arr, int target) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return i; // Return index if found
+            }
+        }
+        return -1; // Return -1 if not found
+    }
 
     public static void main(String[] args) {
         int[] array1 = {1, 2, 3, 4, 5};
