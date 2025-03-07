@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class LongestSubarraySumK {
+public class longestArray {
 
     public static int longestSubarrayWithSumK(int[] arr, int K) {
         // Map to store (cumulative_sum, index)

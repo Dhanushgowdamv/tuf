@@ -1,9 +1,10 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.*;
 
 public class MoveZerosToEnd {
     // move the zeroes to the end of the arr in brute way
-    public static void moveZerosBrute(LIst<Integer> arr) {
+    public static void moveZerosBrute(List<Integer> arr) {
         List<Integer> temp = new ArrayList<>();
 
         for(int num : arr){
