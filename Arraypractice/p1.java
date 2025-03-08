@@ -15,6 +15,20 @@ public class p1 {
         }
     }
 
+    public static void moveZerosBetter(List<Interger>arr){
+        int count =0 ;
+        for(int i=0;i<n;i++){
+            if(arr.get(i) !=0){
+                arr.set(count++ , arr.get(i));
+            }
+
+
+        }
+        while(count < arr.size()){
+            arr.set(count++ ,0);
+        }
+    }
+
     public static void main(String[] args) {
         List<Integer> arr = new ArrayList<>(Arrays.asList(0,1,0,3,12,6,0,4,0,88));
         moveZeroOptmail(arr);
